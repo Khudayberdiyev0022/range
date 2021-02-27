@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="range.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class='wrapper'>
+        <h1>Онлайн займы на карту.<br /><br />
+        <span>В течение 10 минут, только по одному паспорту и удобным способом</span></h1>
+        <div class="container">
+            <h1 class='main_header'>Первый Займ 0%</h1>
+            <div class="first">
+                <h4>15000 &#x20BD;</h4>
+                <div class="range">
+                    <div class="sliderValue">
+                            <span>1</span>
+                        </div>
+                    <div class="field">
+                        <input type="range" min="15000" max="50000" value="1000" step="1000">
+                    </div>
+                </div>
+                <h4>50000 &#x20BD;</h4>
+            </div>
+            <div class="second">
+                <h4>75Д</h4>
+                    <div class="range">
+                        <div class="sliderValue">
+                            <span>1</span>
+                        </div>
+                        <div class="field">
+                            <input type="range" min="75" max="360" value="1" step="1">
+                        </div>
+                </div>
+                <h4>360Д</h4>
+            </div>
+            <div class="output">
+                <h1>Сумма займа: <span class="money">15000</span>&#x20BD;</h1>
+                <h1>День займа: <span class="date">75</span>Д</h1>
+            </div>
+            <div class="href">
+                <a href="https://google.com">Получить денги </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const money = document.querySelector(".money");
+        const date = document.querySelector(".date");
+        const sliderValue = document.querySelector(".first span");
+        const inputSlider = document.querySelector(".first input");
+        inputSlider.oninput = (() => {
+            let value = inputSlider.value;
+            sliderValue.textContent = value;
+            sliderValue.style.left = ((value / 350)-44 ) + "%";
+            sliderValue.classList.add("show");
+            money.innerHTML = inputSlider.value
+        })
+        inputSlider.onblur = (() => {
+            sliderValue.classList.remove("show");
+        })
+
+        const sliderValue1 = document.querySelector(".second span");
+        const inputSlider1 = document.querySelector(".second input");
+        inputSlider1.oninput = (() => {
+            let value = inputSlider1.value;
+            sliderValue1.textContent = value;
+            sliderValue1.style.left = ((value / 2.95)-25) + "%";
+            sliderValue1.classList.add("show");
+            date.innerHTML = inputSlider1.value
+            console.log(value < 150 ? 5 : 5)
+        })
+        inputSlider1.onblur = (() => {
+            sliderValue1.classList.remove("show");
+        })
+    </script>
+</body>
+
+</html>
