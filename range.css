@@ -2,8 +2,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        /* font-family: 'Poppins', sans-serif; */
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif; /* Здесь сможете стил шрифта поменять */
     }
     
     .wrapper {
@@ -17,7 +16,7 @@
     
     .wrapper>h1 {
         width: 50%;
-        color: #fff;
+        color: #fff; /* Здесь сможете цвет шрифта поменять (Онлайн займы на карту В течение 10 минут, только по одному паспорту и удобным способом) */ 
         font-size: 50px;
         text-align: left;
     }
@@ -29,8 +28,7 @@
     
     .container {
         width: 50%;
-        /* max-width: 500px; */
-        background-color: #664aff;
+        background-color: #664aff; /* Здесь общый цвет который держить инфо можно поменять */
         padding: 20px;
         height: 100%;
         display: flex;
@@ -41,7 +39,7 @@
     }
     
     body {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif;  /* Здесь сможете стил шрифта поменять */
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -49,9 +47,7 @@
         width: 100%;
         min-height: 100vh;
         text-align: center;
-        /* place-items: center; */
-        /* background: #664aff; */
-        background-image: url('image.jpg');
+        background-image: url('image.jpg'); /* Здесь сможете фон поменять */
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -69,8 +65,9 @@
     
     .output h1 {
         text-align: center;
-        color: #fff;
-        font-size: 23зч;
+        color: #fff; /* Здесь цвет шрифта поменять (Сумма займа: 15000₽
+        День займа: 75 дней)*/
+        font-size: 23px;
         padding: 10px;
     }
     
@@ -78,7 +75,7 @@
         transition: all 1s ease;
         width: 80%;
         height: 60px;
-        background-color: #fff;
+        background-color: #fff; /* Здесь задный фон кнопка(button)(Получить деньги) поменять*/
         border-radius: 20px;
         color: #664aff;
         display: flex;
@@ -159,12 +156,7 @@
         width: 100%;
         /* height: 20px; */
     }
-    /* .first .sliderValue span {
-        top: -90px;
-    }
-    
-    .second .sliderValue span {
-    } */
+
     
     .range .sliderValue span {
         top: -40px;
@@ -259,16 +251,6 @@
         .container h1 {
             font-size: 20px;
         }
-        /* h1,
-        h,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        a {
-            font-size: 12px;
-        } */
     }
     
     @media screen and (max-width:500px) {
